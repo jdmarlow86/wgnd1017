@@ -1,43 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WGND 101.7 FM</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>WGND 101.7 FM - 3ABN Radio, LaFollette TN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
-  <body>
-    <header>
-      <h1>WGND 101.7 FM</h1>
-      <p>LaFollette, TN</p>
-    </header>
+  <body class="is-preload">
 
-    <main>
-      <section id="tunein">
-        <h2>Listen Live</h2>
-        <!-- MyTuner Radio Widget Embed -->
-        <div id="w6PDpcOlw7hkwrfDnMKrYmjDnCvDjDVNambCq8OVNMOM" class="mytuner-widget" data-target="434079" data-requires_initialization="true" data-autoplay="false" data-hidehistory="false" style="width: 100%; max-width: 100%; overflow: hidden; max-height: 500px; border: 1px solid rgb(129, 127, 128); border-radius: 6px;"></div>
-        <script src="https://mytuner-radio.com/static/js/widgets/player-v1.js" defer></script>
-        <script src="https://mytuner-radio.com/static/js/widgets/widget-player-v1.js" defer></script>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Intro -->
+      <section id="intro" class="main style1 fullscreen">
+        <div class="content">
+          <header>
+            <h1>WGND 101.7 FM</h1>
+            <p>3ABN Radio – LaFollette, Tennessee</p>
+          </header>
+          <p>Broadcasting the everlasting gospel 24/7 through the power of Christian radio.<br />
+          A proud affiliate of the Three Angels Broadcasting Network.</p>
+        </div>
       </section>
 
-      <section id="about">
-        <h2>About WGND</h2>
-        <p>WGND 101.7 FM is a 3ABN radio station serving the LaFollette, TN area with uplifting Christian programming.</p>
+      <!-- About -->
+      <section id="one" class="main style2 right dark fullscreen">
+        <div class="content box style2">
+          <header>
+            <h2>About WGND</h2>
+          </header>
+          <p>WGND 101.7 FM is a locally operated Christian radio station affiliated with 3ABN Radio. We serve the LaFollette, TN area with uplifting, Bible-centered content for all ages.</p>
+        </div>
       </section>
 
-      <section id="links">
-        <h2>External Links</h2>
-        <ul>
-          <li><a href="https://3abnradio.org" target="_blank" rel="noopener"><img src="assets/icons/3abn.png" alt="3ABN Logo" class="icon" /> 3ABN Radio</a></li>
-          <li><a href="https://bibleuniverse.com" target="_blank" rel="noopener"><img src="assets/icons/bible.png" alt="Bible Universe Logo" class="icon" /> Bible Universe</a></li>
+      <!-- Tune In -->
+      <section id="two" class="main style2 left dark fullscreen">
+        <div class="content box style2">
+          <header>
+            <h2>Tune In</h2>
+          </header>
+          <p>You can listen to WGND live right here:</p>
+          <!-- Audio Player -->
+          <audio controls style="width: 100%; margin-top: 1em;">
+            <source src="https://streaming.live365.com/a12345" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <p style="margin-top: 1em;">(Note: Replace the above URL with the actual WGND stream link when available.)</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="content">
+          <ul class="icons">
+            <li>
+              <a href="https://3abnradio.org" target="_blank" class="icon solid fa-broadcast-tower">
+                <span class="label">3ABN Radio</span>
+              </a>
+              <span style="margin-left: 8px;"><a href="https://3abnradio.org" target="_blank">3ABNRadio.org</a></span>
+            </li>
+            <li>
+              <a href="https://bibleuniverse.com" target="_blank" class="icon solid fa-book">
+                <span class="label">Bible Universe</span>
+              </a>
+              <span style="margin-left: 8px;"><a href="https://bibleuniverse.com" target="_blank">BibleUniverse.com</a></span>
+            </li>
+          </ul>
+        </div>
+        <ul class="copyright">
+          <li>&copy; WGND 101.7 FM. All rights reserved.</li>
+          <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
         </ul>
       </section>
-    </main>
 
-    <footer>
-      <p>&copy; 2025 WGND 101.7 FM | <a href="https://3abnradio.org" target="_blank" rel="noopener">3ABN Radio</a> | <a href="https://bibleuniverse.com" target="_blank" rel="noopener">Bible Universe</a></p>
-    </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>
