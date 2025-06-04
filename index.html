@@ -1,127 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WGND 101.7 FM - LaFollette, TN</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
+  <meta charset="UTF-8">
+  <title>WGND-LP 101.7 FM – 3ABN Radio LaFollette, TN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    /* Reset and base styles */
+    * {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #fefaf6;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
     }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #b85c38;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header styles */
     header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/2/26/3ABN_logo.png') no-repeat center/contain, linear-gradient(to right, #7c5e3a, #d3b18c);
-      background-blend-mode: multiply;
-      padding: 60px 20px 40px;
+      background: url('https://example.com/radio-header.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 60px 20px;
       text-align: center;
-      color: white;
       position: relative;
     }
 
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 2;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      position: relative;
+      z-index: 2;
+      font-size: 1.2em;
+      margin-bottom: 20px;
     }
 
     nav {
-      margin-top: 15px;
+      position: relative;
+      z-index: 2;
+      margin-top: 20px;
     }
 
     nav a {
-      color: #fff;
+      display: inline-block;
       margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      background-color: rgba(0,0,0,0.2);
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+      padding: 10px 20px;
+      background-color: #b85c38;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: rgba(0,0,0,0.4);
+      background-color: #a04e30;
     }
 
+    /* Main content styles */
     main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .widget {
-      margin: 30px 0;
-      text-align: center;
+    section {
+      margin-bottom: 40px;
     }
 
-    footer {
-      text-align: center;
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #b85c38;
+    }
+
+    /* Radio player styles */
+    .radio-player {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      border: 1px solid #817f80;
+      border-radius: 6px;
+      background-color: #f2f2f2;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #777;
     }
 
+    /* Footer styles */
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      color: #333;
+    }
+
+    .footer-links a img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .footer-links a:hover {
+      color: #b85c38;
+    }
+
+    .footer-text {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Responsive styles */
     @media (max-width: 600px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2em;
       }
+
       nav a {
-        display: block;
-        margin: 8px auto;
+        margin: 5px 10px;
+        padding: 8px 16px;
+      }
+
+      section h2 {
+        font-size: 1.5em;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>WGND 101.7 FM - LaFollette, TN</h1>
+    <h1>WGND-LP 101.7 FM</h1>
+    <p>3ABN Radio – LaFollette, Tennessee</p>
     <nav>
-      <a href="#donate">Donate</a>
-      <a href="#stay-updated">Stay Updated!</a>
+      <a href="https://3abn.org/donate.html" target="_blank">Donate</a>
+      <a href="https://3abn.org/newsletter.html" target="_blank">Stay Updated!</a>
     </nav>
   </header>
 
   <main>
-    <section class="widget">
-      <!-- MyTuner Player -->
-      <iframe 
-        src="https://mytuner-radio.com/embed/player/3abn-radio/iframe/" 
-        frameborder="0" 
-        width="100%" 
-        height="150" 
-        allow="autoplay" 
-        allowfullscreen>
-      </iframe>
-    </section>
-
-    <section id="donate">
-      <h2>Support Our Ministry</h2>
-      <p>We are listener-supported. Your generous donation helps keep WGND 101.7 FM on the air and spreading God's Word throughout the community.</p>
-      <p><a href="https://3abn.org/donate" target="_blank">Click here to donate securely via 3ABN</a></p>
-    </section>
-
-    <section id="stay-updated">
-      <h2>Stay Updated!</h2>
-      <p>Receive station updates, event notices, and more. Visit <a href="https://3abn.org" target="_blank">3ABN.org</a> or follow us through your favorite Christian media outlets.</p>
+    <section>
+      <h2>Tune In</h2>
+      <div class="radio-player">
+        <!-- Embedded myTuner Radio widget -->
+        <iframe src="https://mytuner-radio.com/embed/player/434079" width="100%" height="150" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
+        <p style="margin-top: 10px;">If the player doesn't load, you can listen directly on <a href="https://mytuner-radio.com/radio/wgnd-lp-3abn-1017-fm-434079/" target="_blank">myTuner Radio</a>.</p>
+      </div>
     </section>
 
     <section>
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="https://3abnradio.org" target="_blank">3ABN Radio</a></li>
-        <li><a href="https://bibleuniverse.com" target="_blank">BibleUniverse.com</a></li>
-      </ul>
+      <h2>About WGND-LP</h2>
+      <p>WGND-LP 101.7 FM is a 3ABN radio affiliate serving LaFollette, Tennessee. Our mission is to share the gospel through uplifting music, inspiring messages, and community-focused programming.</p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 WGND 101.7 FM • A 3ABN Radio Affiliate Station • LaFollette, TN
+    <div class="footer-links">
+      <a href="https://3abnradio.org" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/radio.png" alt="3ABN Radio Icon">
+        3ABN Radio
+      </a>
+      <a href="https://bibleuniverse.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/bible.png" alt="Bible Universe Icon">
+        Bible Universe
+      </a>
+    </div>
+    <div class="footer-text">
+      &copy; 2025 WGND-LP 101.7 FM. All rights reserved.
+    </div>
   </footer>
-
 </body>
 </html>
