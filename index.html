@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>WGND-LP 101.7 FM – 3ABN Radio LaFollette, TN</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    /* Reset and base styles */
     * {
       margin: 0;
       padding: 0;
@@ -28,7 +27,6 @@
       text-decoration: underline;
     }
 
-    /* Header styles */
     header {
       background: url('https://example.com/radio-header.jpg') no-repeat center center/cover;
       color: #fff;
@@ -48,29 +46,30 @@
       z-index: 1;
     }
 
-    header h1 {
+    header h1,
+    header p,
+    nav {
       position: relative;
       z-index: 2;
+    }
+
+    header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
 
     header p {
-      position: relative;
-      z-index: 2;
       font-size: 1.2em;
       margin-bottom: 20px;
     }
 
     nav {
-      position: relative;
-      z-index: 2;
       margin-top: 20px;
     }
 
     nav a {
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 10px;
       padding: 10px 20px;
       background-color: #b85c38;
       color: #fff;
@@ -82,7 +81,6 @@
       background-color: #a04e30;
     }
 
-    /* Main content styles */
     main {
       padding: 40px 20px;
       max-width: 1000px;
@@ -99,10 +97,8 @@
       color: #b85c38;
     }
 
-    /* Radio player styles */
     .radio-player {
       width: 100%;
-      max-width: 100%;
       overflow: hidden;
       border: 1px solid #817f80;
       border-radius: 6px;
@@ -110,7 +106,6 @@
       padding: 20px;
     }
 
-    /* Footer styles */
     footer {
       background-color: #eee;
       padding: 20px;
@@ -118,11 +113,14 @@
     }
 
     .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
       margin-bottom: 10px;
     }
 
     .footer-links a {
-      margin: 0 10px;
       display: inline-flex;
       align-items: center;
       color: #333;
@@ -132,6 +130,7 @@
       width: 20px;
       height: 20px;
       margin-right: 8px;
+      object-fit: contain;
     }
 
     .footer-links a:hover {
@@ -143,14 +142,13 @@
       color: #666;
     }
 
-    /* Responsive styles */
     @media (max-width: 600px) {
       header h1 {
         font-size: 2em;
       }
 
       nav a {
-        margin: 5px 10px;
+        margin: 5px 8px;
         padding: 8px 16px;
       }
 
@@ -174,9 +172,11 @@
     <section>
       <h2>Tune In</h2>
       <div class="radio-player">
-        <!-- Embedded myTuner Radio widget -->
         <iframe src="https://mytuner-radio.com/embed/player/434079" width="100%" height="150" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-        <p style="margin-top: 10px;">If the player doesn't load, you can listen directly on <a href="https://mytuner-radio.com/radio/wgnd-lp-3abn-1017-fm-434079/" target="_blank">myTuner Radio</a>.</p>
+        <p style="margin-top: 10px;">
+          If the player doesn't load, you can listen directly on
+          <a href="https://mytuner-radio.com/radio/wgnd-lp-3abn-1017-fm-434079/" target="_blank">myTuner Radio</a>.
+        </p>
       </div>
     </section>
 
@@ -189,11 +189,11 @@
   <footer>
     <div class="footer-links">
       <a href="https://3abnradio.org" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/radio.png" alt="3ABN Radio Icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/radio.png" alt="Radio Icon" />
         3ABN Radio
       </a>
       <a href="https://bibleuniverse.com" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/bible.png" alt="Bible Universe Icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/open-book.png" alt="Bible Icon" />
         Bible Universe
       </a>
     </div>
