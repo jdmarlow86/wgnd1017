@@ -163,3 +163,20 @@ footer {
         text-align: center;
     }
 
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #b85c38;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+}
+
+    .back-button:hover {
+        background-color: #a04e30;
+    }
+
