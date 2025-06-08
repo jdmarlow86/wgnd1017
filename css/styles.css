@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #003366;
+    --accent-color: #FFD700;
+    --light-bg: #f9f9f9;
+    --dark-text: #222;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +14,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfaf6;
-    color: #333;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
     line-height: 1.6;
 }
 
 a {
-    color: #b85c38;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -37,7 +45,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -51,6 +59,7 @@ a {
 .hero h1 {
     font-size: 3em;
     font-weight: bold;
+    color: var(--accent-color);
 }
 
 .hero p {
@@ -59,17 +68,18 @@ a {
 }
 
 .hero nav a {
-    background-color: #b85c38;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     margin: 5px;
     border-radius: 4px;
     transition: background 0.3s ease;
     display: inline-block;
+    font-weight: bold;
 }
 
     .hero nav a:hover {
-        background-color: #a04e30;
+        background-color: #e5c100;
     }
 
 .main-content {
@@ -85,22 +95,22 @@ a {
     .section h2 {
         font-size: 2em;
         margin-bottom: 15px;
-        color: #b85c38;
-        border-bottom: 2px solid #ddd;
+        color: var(--primary-color);
+        border-bottom: 2px solid #ccc;
         padding-bottom: 5px;
     }
 
 .radio-player {
     width: 100%;
-    border: 1px solid #817f80;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: #f2f2f2;
+    background-color: var(--white);
     padding: 20px;
 }
 
 .notice {
-    background-color: #fff7f3;
-    border-left: 5px solid #b85c38;
+    background-color: #fff8dc;
+    border-left: 5px solid var(--accent-color);
     padding: 10px 20px;
     margin-top: 10px;
     font-size: 0.95em;
@@ -109,7 +119,7 @@ a {
 form.contact-form {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--white);
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -126,7 +136,7 @@ form.contact-form {
 }
 
 .contact-form button {
-    background-color: #b85c38;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -135,14 +145,14 @@ form.contact-form {
 }
 
     .contact-form button:hover {
-        background-color: #a04e30;
+        background-color: #002244;
     }
 
 footer {
-    background-color: #eee;
+    background-color: #003366;
     padding: 20px;
     text-align: center;
-    margin-top: 40px;
+    color: white;
 }
 
 .footer-links {
@@ -156,7 +166,7 @@ footer {
     .footer-links a {
         display: inline-flex;
         align-items: center;
-        color: #333;
+        color: white;
     }
 
         .footer-links a img {
@@ -167,19 +177,18 @@ footer {
         }
 
         .footer-links a:hover {
-            color: #b85c38;
+            color: var(--accent-color);
         }
 
 .footer-text {
     font-size: 0.9em;
-    color: #666;
 }
 
 .back-button {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #b85c38;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -189,10 +198,9 @@ footer {
 }
 
     .back-button:hover {
-        background-color: #a04e30;
+        background-color: #001f3f;
     }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2em;

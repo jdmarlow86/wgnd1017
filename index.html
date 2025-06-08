@@ -30,29 +30,41 @@
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>About WGND</h2>
-            <p>WGND 101.7 FM is a 3ABN radio affiliate serving LaFollette, Tennessee. Our mission is to share the gospel through uplifting music, inspiring messages, and community-focused programming.</p>
+            <p>
+                WGND 101.7 FM is a <a href="https://3abn.org/3abn-radio.html" target="_blank">3ABN radio affiliate</a> serving LaFollette, Tennessee. Our mission is to share the gospel through uplifting music, inspiring messages, and community-focused programming.
+            </p>
         </section>
 
-        <section class="section" id="contact">
+
+        <section id="contact">
             <h2>Contact Us</h2>
             <form action="https://formsubmit.co/jonmarlow@gmail.com" method="POST" class="contact-form">
                 <input type="hidden" name="_next" value="https://jdmarlow86.github.io/wgnd1017/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label><br />
+                <input type="text" id="name" name="name" required />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label><br />
+                <input type="email" id="email" name="email" required />
 
-                <label for="message">Message</label>
+                <label for="subject">Subject</label><br />
+                <select id="subject" name="subject" required>
+                    <option value="">Select</option>
+                    <option value="More info">More info</option>
+                    <option value="Prayer Request">Prayer Request</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Message</label><br />
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
     </main>
 
     <footer>
