@@ -167,4 +167,8 @@ footer {
     section h2 {
         font-size: 1.5em;
     }
+
+    header .logo {
+        width: 80px;
+    }
 }
