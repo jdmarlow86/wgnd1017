@@ -1,11 +1,4 @@
-:root {
-    --primary-color: #003366;
-    --accent-color: #FFD700;
-    --light-bg: #f9f9f9;
-    --dark-text: #222;
-    --white: #fff;
-}
-
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +7,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--light-bg);
-    color: var(--dark-text);
+    background-color: #f4faff;
+    color: #333;
     line-height: 1.6;
 }
 
 a {
-    color: var(--primary-color);
+    color: #0077cc;
     text-decoration: none;
 }
 
@@ -28,128 +21,94 @@ a {
         text-decoration: underline;
     }
 
-.hero {
-    background: url('https://example.com/radio-header.jpg') no-repeat center center/cover;
-    height: 60vh;
-    position: relative;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Header */
+header {
+    background-color: #87c9f5;
+    color: #fff;
+    padding: 60px 20px;
     text-align: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-
-.hero h1,
-.hero p,
-.hero nav {
     position: relative;
-    z-index: 2;
 }
 
-.hero h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: var(--accent-color);
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
-}
-
-.hero nav a {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-    display: inline-block;
-    font-weight: bold;
-}
-
-    .hero nav a:hover {
-        background-color: #e5c100;
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
     }
 
-.main-content {
+    header p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+nav {
+    margin-top: 20px;
+}
+
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: #005b99;
+        color: #fff;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        nav a:hover {
+            background-color: #004477;
+        }
+
+/* Main content */
+main {
+    padding: 40px 20px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
 }
 
-.section {
-    margin-bottom: 50px;
+section {
+    margin-bottom: 40px;
 }
 
-    .section h2 {
+    section h2 {
         font-size: 2em;
-        margin-bottom: 15px;
-        color: var(--primary-color);
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 5px;
+        margin-bottom: 20px;
+        color: #005b99;
     }
 
 .radio-player {
     width: 100%;
+    overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: var(--white);
+    background-color: #f2f8fc;
     padding: 20px;
 }
 
-.notice {
-    background-color: #fff8dc;
-    border-left: 5px solid var(--accent-color);
-    padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 0.95em;
-}
-
-form.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: var(--white);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
+/* Contact Form */
 .contact-form button {
-    background-color: var(--primary-color);
+    background-color: #005b99;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
     .contact-form button:hover {
-        background-color: #002244;
+        background-color: #004477;
     }
 
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #005b99;
+    text-align: center;
+}
+
+/* Footer */
 footer {
-    background-color: #003366;
+    background-color: #87c9f5;
     padding: 20px;
     text-align: center;
     color: white;
@@ -177,45 +136,24 @@ footer {
         }
 
         .footer-links a:hover {
-            color: var(--accent-color);
+            text-decoration: underline;
         }
 
 .footer-text {
     font-size: 0.9em;
 }
 
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 10;
-}
-
-    .back-button:hover {
-        background-color: #001f3f;
-    }
-
-@media (max-width: 768px) {
-    .hero h1 {
+@media (max-width: 600px) {
+    header h1 {
         font-size: 2em;
     }
 
-    .hero nav a {
+    nav a {
+        margin: 5px 8px;
         padding: 8px 16px;
     }
 
-    .section h2 {
+    section h2 {
         font-size: 1.5em;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
     }
 }
