@@ -172,3 +172,29 @@ footer {
         width: 80px;
     }
 }
+
+#donate {
+    text-align: center;
+    margin: 40px 0;
+}
+
+    #donate a {
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 20px;
+        background-color: #005b99;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+        #donate a:hover {
+            background-color: #004477;
+        }
+
+        #donate a img {
+            margin-right: 10px;
+        }
