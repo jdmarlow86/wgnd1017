@@ -99,13 +99,17 @@ section {
     }
 
 .radio-player {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #f2f8fc;
+    background-image: url('../images/radio-faith-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
     padding: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
 }
+
 
 /* Contact Form */
 .contact-form button {
