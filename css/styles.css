@@ -108,7 +108,7 @@ section {
 
     .radio-image-banner img {
         width: 100%;
-        height: auto; /* Keeps the original image height */
+        height: 300px; 
         display: block;
         margin-bottom: 10px; /* Reduce space between image and player */
     }
