@@ -98,18 +98,6 @@ section {
         color: #005b99;
     }
 
-.radio-image-banner {
-    text-align: center;
-    margin: 0 auto 10px auto;
-}
-
-    .radio-image-banner img {
-        width: auto;
-        height: auto;
-        max-width: none;
-        display: inline-block;
-        margin-bottom: 10px; /* Reduce space between image and player */
-    }
 
 .radio-player {
     background-color: #f2f8fc;
@@ -128,25 +116,17 @@ section {
         background: transparent;
     }
 
-
-.radio-image {
-    display: block;
-    margin: 0 auto 20px auto;
-    height: auto;
-    max-height: 33vh; /* Shrinks the height to ~1/3 of viewport */
-    width: auto;
-    max-width: 1000px;
-}
-
-
 .radio-banner {
+    display: block;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto 20px auto;
-    display: block;
+    height: auto;
+    margin: 0 auto 10px auto;
     border-radius: 6px;
     object-fit: cover;
 }
+
+
 
 /* Contact Form */
 .contact-form button {
