@@ -101,15 +101,16 @@ section {
 .radio-image-banner {
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
 }
 
     .radio-image-banner img {
         width: 100%;
-        height: auto;
+        height: auto; /* Keeps the original image height */
         display: block;
+        margin-bottom: 10px; /* Reduce space between image and player */
     }
 
 .radio-player {
@@ -128,6 +129,7 @@ section {
         border: none;
         background: transparent;
     }
+
 
 
 
