@@ -124,7 +124,7 @@ section {
     margin: 0 auto 10px auto;
     border-radius: 6px;
     object-fit: cover;
-    max-height: 100vh; /* Add this line to increase height by ~20% */
+    max-height: 200vh; /* Add this line to increase height by ~20% */
 }
 
 /* On larger screens, reduce image height by about half */
