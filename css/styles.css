@@ -28,7 +28,7 @@ header {
     align-items: center;
     position: relative;
     padding: 60px 20px;
-    background-color: #87c9f5;
+    background-color: #008ec9;
     color: #fff;
     text-align: center;
 }
@@ -131,7 +131,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #87c9f5;
+    background-color: #008ec9;
     padding: 20px;
     text-align: center;
     color: white;
