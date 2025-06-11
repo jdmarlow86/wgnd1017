@@ -138,7 +138,14 @@ section {
 }
 
 
-
+.radio-banner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
 
 /* Contact Form */
 .contact-form button {
