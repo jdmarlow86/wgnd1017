@@ -130,7 +130,7 @@ section {
 /* On larger screens, reduce image height by about half */
 @media (min-width: 768px) {
     .radio-banner {
-        height: 200px; /* adjust as needed for ~half height */
+        height: 400px; /* adjust as needed for ~half height */
         object-fit: cover;
     }
 }
