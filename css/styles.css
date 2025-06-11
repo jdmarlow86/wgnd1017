@@ -123,7 +123,8 @@ section {
     height: auto;
     margin: 0 auto 10px auto;
     border-radius: 6px;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 40vh; /* Add this line to increase height by ~20% */
 }
 
 /* On larger screens, reduce image height by about half */
@@ -133,7 +134,7 @@ section {
         object-fit: cover;
     }
 }
-
+    
 
 
 
