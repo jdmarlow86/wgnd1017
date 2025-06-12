@@ -1,3 +1,10 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 .pdf-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -7,14 +14,16 @@
 /* Widen container on desktop (1024px and above) */
 @media (min-width: 1024px) {
     .pdf-container {
-        max-width: 2400px; /* or adjust as needed */
+        width: 100%;
+        max-width: 2400px;
         padding: 0 40px;
     }
 
     iframe {
-        height: 1000px; /* optional: increase height for larger screens */
+        height: 1000px;
     }
 }
+
 
 iframe {
     width: 100%;
