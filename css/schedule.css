@@ -8,7 +8,7 @@
 /* Widen and center on desktop (1024px and up) */
 @media (min-width: 1024px) {
     .pdf-container {
-        max-width: 1400px; /* Adjust width as desired */
+        max-width: 2000px; /* Adjust width as desired */
         padding: 0 40px;
     }
 
