@@ -1,21 +1,14 @@
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-
 .pdf-container {
+    width: 100%;
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Widen container on desktop (1024px and above) */
+/* Widen and center on desktop (1024px and up) */
 @media (min-width: 1024px) {
     .pdf-container {
-        width: 100%;
-        max-width: 2400px;
+        max-width: 1400px; /* Adjust width as desired */
         padding: 0 40px;
     }
 
@@ -23,7 +16,6 @@ html, body {
         height: 1000px;
     }
 }
-
 
 iframe {
     width: 100%;
