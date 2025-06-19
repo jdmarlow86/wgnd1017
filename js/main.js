@@ -21,27 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ========== CONTACT FORM (index.html) ==========
-    const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            const name = document.getElementById("name").value.trim();
-            const reason = document.getElementById("reason").value;
-            const message = document.getElementById("message").value.trim();
-            const date = new Date().toISOString().split("T")[0];
-
-            const entry = { name, reason, message, date };
-
-            const saved = JSON.parse(localStorage.getItem("contactMessages") || "[]");
-            saved.push(entry);
-            localStorage.setItem("contactMessages", JSON.stringify(saved));
-
-            alert("Message sent!");
-            contactForm.reset();
-        });
-    }
+    
 
     // ========== ADMIN PAGE DISPLAY (admin.html) ==========
     const list = document.getElementById("submission-list");
