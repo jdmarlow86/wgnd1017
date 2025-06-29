@@ -21,23 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
-
-    // ========== ADMIN PAGE DISPLAY (admin.html) ==========
-    const list = document.getElementById("submission-list");
-    if (list) {
-        const messages = JSON.parse(localStorage.getItem("contactMessages") || "[]");
-
-        if (messages.length === 0) {
-            list.innerHTML = "<li><em>No submissions yet.</em></li>";
-        } else {
-            list.innerHTML = "";
-            messages.forEach((msg) => {
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${msg.name}</strong> – ${msg.reason} – "${msg.message}" – <em>${msg.date}</em>`;
-                list.appendChild(li);
-            });
-        }
 
         // Optional: Clear button
         const clearBtn = document.getElementById("clear-submissions");
