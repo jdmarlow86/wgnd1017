@@ -6,13 +6,6 @@ This website is built using **HTML and CSS**, hosted for free on **GitHub Pages*
 
 ---
 
-## 🌐 Live Website
-
-Visit the website here:  
-**🔗 [https://jdmarlow86.github.io/wgnd1017/](https://jdmarlow86.github.io/wgnd1017/)**
-
----
-
 ## 📁 What's Inside?
 
 ```
