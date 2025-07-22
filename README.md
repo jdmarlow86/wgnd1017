@@ -132,13 +132,11 @@ This site is designed to work on all screen sizes using basic CSS — no extra f
 
 - 📖 Sermon archive or podcast
 - 📰 Newsletter signup
-- 📅 Church event calendar
-- 🙏 Prayer request form
 
 ---
 
 ## 🙋 Need Help?
 
-If you’re not sure how to do something, feel free to open an [Issue](https://github.com/jdmarlow86/wgnd1017/issues) or email the maintainer.
+If you’re not sure how to do something, feel free to open an [Issue](https://github.com/jdmarlow86/wgnd1017/issues) or email jonmarlow@gmail.com
 
 Happy building and God bless! 🙏
