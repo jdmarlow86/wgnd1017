@@ -1,147 +1,144 @@
 # 📻 WGND-LP 101.7 FM – 3ABN Radio LaFollette, TN
 
-Welcome to the official website repository for **WGND-LP 101.7 FM**, a 3ABN Radio affiliate broadcasting from **LaFollette, Tennessee**. This site is designed to provide listeners with easy access to streaming content, donation links, contact info, and spiritual resources — all through a clean, responsive, and static website hosted on GitHub Pages.
+Welcome to the official website for **WGND-LP 101.7 FM**, a 3ABN Radio station based in **LaFollette, Tennessee**.
+
+This website is built using **HTML and CSS**, hosted for free on **GitHub Pages**, and is designed to be simple and easy for anyone to update or maintain.
 
 ---
 
 ## 🌐 Live Website
 
-**🔗 https://jdmarlow86.github.io/wgnd1017/**
+Visit the website here:  
+**🔗 [https://jdmarlow86.github.io/wgnd1017/](https://jdmarlow86.github.io/wgnd1017/)**
 
 ---
 
-## 📁 Project Structure
+## 📁 What's Inside?
+
+```
+wgnd1017/
+├── index.html          → Main page of the website
+├── thankyou.html       → Shown after sending a contact message
+├── css/
+│   └── styles.css      → The design and layout styles
+├── js/
+│   └── main.js         → Extra behavior or interactivity
+├── images/             → Icons or images used on the site
+├── README.md           → This guide
+```
+
+---
+
+## ✨ Features
+
+- 🎧 Built-in Radio Player
+- 📬 Contact Form (no coding required)
+- 💬 Live Chat Support (Tawk.to)
+- ❤️ Links to trusted SDA resources
+- 💰 Donate with PayPal
+- 📱 Looks great on phones and tablets
+
+---
+
+## 🚀 How to Get Started
+
+> You don’t need to be a programmer! Just follow these steps.
+
+### 1. Make a Copy (Clone the Site)
+
+You’ll need a [GitHub account](https://github.com) first.
+
+Then:
 
 ```bash
-wgnd1017/
-├── index.html              # Main landing page
-├── thankyou.html           # Redirect page after contact form submission
-├── css/
-│   └── styles.css          # All custom site styles
-├── js/
-│   └── main.js             # Script section (currently used for optional interactivity)
-├── images/                 # (Optional) Folder for icons or future images
-├── README.md               # This file
-
----
-🎯 Features
-🎧 Embedded Radio Player from myTuner Radio
-✝️ Station Overview and Spiritual Mission
-📬 Contact Form powered by Formspree
-💬 Live Chat support via Tawk.to
-❤️ Links to trusted Seventh-day Adventist resources
-💰 Optional PayPal donation link
-📱 Fully responsive layout using clean HTML/CSS (no frameworks)
----
-
-🚀 Getting Started
-1. Clone the Repository
-bash
-Copy
-Edit
 git clone https://github.com/YOUR_USERNAME/wgnd1017.git
 cd wgnd1017
-2. Customize or Edit
-You can edit content using any code editor (e.g., VS Code). Layout and style are handled in:
+```
 
-index.html – structure and content
+### 2. Edit the Website
 
-css/styles.css – appearance
+You can open the folder in **VS Code** or any text editor.  
+Update content in:
 
-js/main.js – optional scripts (e.g. for animations or custom features)
+- `index.html` – the main content
+- `css/styles.css` – change colors and layout
+- `js/main.js` – optional JavaScript for features
 
-3. Deploy to GitHub Pages
-To publish the site on GitHub Pages:
+### 3. Publish It Online
 
-Push your code to a GitHub repository.
+Go to your GitHub repo and:
 
-Go to the Settings tab → Pages.
+1. Click **Settings**
+2. Scroll to **Pages**
+3. Under **Source**, select `main` branch and `/ (root)`
+4. Click **Save**
 
-Under "Source," select the main branch and / (root) folder.
+GitHub will give you a link to your live website!
 
-Save and wait for GitHub to build your site.
+---
 
-📬 Contact Form Setup (Formspree)
-The contact form uses Formspree for backend-free submissions.
+## 📬 Set Up the Contact Form
 
-To configure:
+The contact form works using [Formspree.io](https://formspree.io).
 
-Create a free Formspree account at https://formspree.io.
+### To activate it:
 
-Create a new form and copy your form endpoint.
+1. Sign up at Formspree
+2. Create a form and copy your action URL
+3. In `index.html`, update:
 
-In index.html, replace this line:
+```html
+<form action="https://formspree.io/f/your-id" method="POST">
+```
 
-html
-Copy
-Edit
-<form action="https://formspree.io/f/myzjzwoo" method="POST">
-with your unique Formspree URL.
+Also update the redirect:
 
-Also ensure this redirect line matches your actual GitHub Pages thank you page:
-
-html
-Copy
-Edit
+```html
 <input type="hidden" name="_redirect" value="https://yourusername.github.io/wgnd1017/thankyou.html">
-💬 Live Chat Integration (Tawk.to)
-Sign up for a free account at https://tawk.to.
+```
 
-Set up your widget and copy the embed code.
+---
 
-Replace the Tawk script at the bottom of index.html with your own code:
+## 💬 Live Chat (Tawk.to)
 
-html
-Copy
-Edit
-<script type="text/javascript">
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function() {
-  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = 'https://embed.tawk.to/YOUR_ID/default';
-  s1.charset = 'UTF-8';
-  s1.setAttribute('crossorigin', '*');
-  s0.parentNode.insertBefore(s1, s0);
-})();
-</script>
-💰 Donation Button (PayPal)
-There’s a small PayPal “Support” button added in the footer. To personalize:
+Want a live chat box on the website?
 
-Go to PayPal Button Generator.
+1. Go to [tawk.to](https://tawk.to)
+2. Sign up and create a widget
+3. Copy their code and replace the current `<script>` at the bottom of `index.html`
 
-Get your hosted PayPal link.
+---
 
-Replace the placeholder in index.html:
+## 💰 Add Your PayPal Donate Link
 
-html
-Copy
-Edit
+To let visitors donate:
+
+1. Use [PayPal button generator](https://www.paypal.com/buttons/)
+2. Replace this link in `index.html`:
+
+```html
 <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_ID" target="_blank">
-It appears as:
+```
 
-html
-Copy
-Edit
-<img src="https://img.icons8.com/ios-filled/50/000000/paypal.png" alt="PayPal Icon" />
-Support
-📱 Mobile Responsive Design
-This site uses semantic HTML5 and vanilla CSS with media queries to scale gracefully on all screen sizes. No external libraries or frameworks like Bootstrap are used — just clean, minimal design.
+---
 
-👨‍💻 Developer Notes
-All icons used are sourced from Icons8.
+## 📱 Mobile Friendly
 
-All styles are contained in css/styles.css. You can freely add class selectors and reorganize styles.
+This site is designed to work on all screen sizes using basic CSS — no extra frameworks like Bootstrap.
 
-JavaScript is currently minimal but the structure (js/main.js) is ready for expansion.
+---
 
-📦 Future Enhancements
-Add podcast or sermon archive
+## 💡 Future Ideas
 
-Include a newsletter subscription option
+- 📖 Sermon archive or podcast
+- 📰 Newsletter signup
+- 📅 Church event calendar
+- 🙏 Prayer request form
 
-Social media embedding or sharing buttons
+---
 
-Event calendar integration
+## 🙋 Need Help?
 
-Prayer request form
+If you’re not sure how to do something, feel free to open an [Issue](https://github.com/jdmarlow86/wgnd1017/issues) or email the maintainer.
+
+Happy building and God bless! 🙏
