@@ -40,6 +40,16 @@ wgnd1017/
 
 ---
 
+## 🛠 Tools You’ll Need
+
+Before you begin, make sure you have:
+
+- A GitHub account
+- A code editor (we recommend [Visual Studio Code](https://code.visualstudio.com/))
+- Basic knowledge of HTML and CSS
+- [Git](https://git-scm.com/) installed (optional but helpful)
+
+
 ## 🚀 How to Get Started
 
 > You don’t need to be a programmer! Just follow these steps.
